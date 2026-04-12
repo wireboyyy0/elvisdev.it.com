@@ -22,13 +22,19 @@
     <p>Phone: +233 535 942 283</p>
 
     
-        <form  class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="95b33b2f-51e9-4914-b574-c2728576ff59">
-        <input type="text" placeholder="Your Name" required><br><br>
-        <input type="email" placeholder="Your Email" required><br><br>
-        <textarea placeholder="Your Message" required></textarea><br><br>
-        <button type="submit">Send Message</button>
-</form>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="95b33b2f-51e9-4914-b574-c2728576ff59"/>
+            <br><br>
+            <input type="text" name="name" placeholder="Your Name" required/>
+            <br><br>
+            <input type="email" name="email" placeholder="Your Email" required/>
+            <br><br>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <br><br>
+            <button type="submit">Submit Form</button>
+
+        </form>
+       
 
 </div>
 
