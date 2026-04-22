@@ -2,23 +2,52 @@
 <html>
 <head>
     <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png.ico">
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAuth, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAriy5FJE-wXeP6mqWDxkTlcQoV2UI7bG4",
+            authDomain: "elvis-development.firebaseapp.com",
+            projectId: "elvis-development",
+            storageBucket: "elvis-development.firebasestorage.app",
+            messagingSenderId: "24539834469",
+            appId: "1:24539834469:web:f0f88f731da760f55d7e8c"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        window.auth = auth;
+        window.sendPasswordResetEmail = sendPasswordResetEmail;
+    </script>
 </head>
 <div class="slider">
     <img src="images/bbb.jpg.jpeg" class="slide active">
     <img src="images/bbv.jpg.jpeg" class="slide active">
 </div>
 <body>
-
+<div class="forgot-container">
 <h2>Reset Password</h2>
 
-<input type="email" placeholder="Enter your email"><br><br>
+<input type="email" id="email" placeholder="Enter your email"><br><br>
 
-<button onclick="alert('Reset link sent (demo)')">Send Reset Link</button>
+<button onclick="resetPassword()">Send Reset Link</button>
+
+<p id="message"></p>
 
 <p><a href="login.html">Back to Login</a></p>
-
+</div>
 </body>
 <div class="footer">
     <p>© 2026 My Portfolio All Rights Reserved email: elvisdzidula69@gmail.com Location: Accra, Ghana</p>
 </div>
+
+<script src="script.js"></script>
 </html>

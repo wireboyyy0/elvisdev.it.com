@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png.ico">
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAriy5FJE-wXeP6mqWDxkTlcQoV2UI7bG4",
+            authDomain: "elvis-development.firebaseapp.com",
+            projectId: "elvis-development",
+            storageBucket: "elvis-development.firebasestorage.app",
+            messagingSenderId: "24539834469",
+            appId: "1:24539834469:web:f0f88f731da760f55d7e8c"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        window.auth = auth;
+        window.db = db;
+        window.signInWithEmailAndPassword = signInWithEmailAndPassword;
+    </script>
 </head>
 <div class="slider">
     <img src="images/bbb.jpg.jpeg" class="slide active">
@@ -14,7 +41,7 @@
 <div class="login-container">
     <h2>Login</h2>
 
-    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="email" id="email" placeholder="Email"><br><br>
     <input type="password" id="password" placeholder="Password"><br><br>
 
     <button onclick="login()">Login</button>

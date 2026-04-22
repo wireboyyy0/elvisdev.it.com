@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png.ico">
     
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAriy5FJE-wXeP6mqWDxkTlcQoV2UI7bG4",
+            authDomain: "elvis-development.firebaseapp.com",
+            projectId: "elvis-development",
+            storageBucket: "elvis-development.firebasestorage.app",
+            messagingSenderId: "24539834469",
+            appId: "1:24539834469:web:f0f88f731da760f55d7e8c"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        window.auth = auth;
+        window.db = db;
+        window.signOut = signOut;
+        window.onAuthStateChanged = onAuthStateChanged;
+    </script>
+    
 </head>
 <body>
 

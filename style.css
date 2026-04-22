@@ -12,6 +12,9 @@ a {
 .navbar {
     background-color: #333;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a, .dropbtn {
@@ -21,6 +24,16 @@ a {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.user-info {
+    color: white;
+    padding: 14px 20px;
+}
+
+.user-info a {
+    color: #ccc;
+    margin-left: 10px;
 }
 
 .dropdown {
@@ -215,4 +228,63 @@ html {
     margin-top: 20px;
     font-style: italic;
     color: #555;
+}
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.signup-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.signup-container input {
+    width: 90%;
+    padding: 10px;
+}
+.signup-container button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.forgot-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.forgot-container input {
+    width: 90%;
+    padding: 10px;
+}
+.forgot-container button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
