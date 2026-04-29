@@ -10,38 +10,53 @@
 <body>
 
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-</div>
+<header class="navbar">
+    <div class="brand">
+        <a href="index.html">Elvis Jiagge</a>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="button button-secondary">Login</a>
+    </nav>
+</header>
 
 
-<div class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: elvisdzidula69@gmail.com</p>
-    <p>Phone: +233 535 942 283</p>
+<main class="site-content">
+    <section class="contact section">
+        <div class="contact-panel">
+            <span class="section-label">Contact</span>
+            <h2>Let’s build something great together.</h2>
+            <p>Reach out to discuss your website needs, collaboration opportunities, or to get a custom quote.</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> elvisdzidula69@gmail.com</p>
+                <p><strong>Phone:</strong> +233 535 942 283</p>
+            </div>
+        </div>
+        <div class="contact-grid">
+            <form class="contact-form" action="https://formspree.io/f/xlgzrrgg" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="_replyto" placeholder="Your Email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="button button-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
 
-    
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="95b33b2f-51e9-4914-b574-c2728576ff59"/>
-            <br><br>
-            <input type="text" name="name" placeholder="Your Name" required/>
-            <br><br>
-            <input type="email" name="email" placeholder="Your Email" required/>
-            <br><br>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <br><br>
-            <button type="submit">Submit Form</button>
-
-        </form>
-       
-
-</div>
-
-
-<div class="footer">
-    <p>© 2026 My Portfolio All Rights Reserved email: elvisdzidula69@gmail.com Location: Accra, Ghana</p>
-</div>
+<footer class="footer">
+    <p>© 2026 Elvis Jiagge. All rights reserved. Email: elvisdzidula69@gmail.com • Accra, Ghana</p>
+</footer>
 
 </body>
 </html>

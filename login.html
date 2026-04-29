@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,29 +32,23 @@
         window.signInWithEmailAndPassword = signInWithEmailAndPassword;
     </script>
 </head>
-<div class="slider">
-    <img src="images/bbb.jpg.jpeg" class="slide active">
-    <img src="images/bbv.jpg.jpeg" class="slide active">
-</div>
-<body>
+<body class="auth-page">
+    <div class="auth-card login-container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+        <div class="auth-links">
+            <a href="signup.html">Create Account</a>
+            <a href="forgot.html">Forgot Password?</a>
+            <a href="contact.html">Need help? Contact us</a>
+        </div>
+    </div>
 
-<div class="login-container">
-    <h2>Login</h2>
-
-    <input type="email" id="email" placeholder="Email"><br><br>
-    <input type="password" id="password" placeholder="Password"><br><br>
-
-    <button onclick="login()">Login</button>
-
-    <p id="message"></p>
-
-    <p><a href="signup.html">Create Account</a></p>
-    <p><a href="forgot.html">Forgot Password?</a></p>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>© 2026 Elvis Jiagge. All rights reserved. Email: elvisdzidula69@gmail.com • Accra, Ghana</p>
+    </footer>
 </body>
-<div class="footer">
-    <p>© 2026 My Portfolio All Rights Reserved email: elvisdzidula69@gmail.com Location: Accra, Ghana</p>
-</div>
 </html>

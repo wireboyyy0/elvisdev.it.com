@@ -1,4 +1,4 @@
-
+﻿
 let slides = document.querySelectorAll('.slide');
 let current = 0;
 
@@ -106,9 +106,7 @@ function showOnScroll() {
 }
 
 window.addEventListener('scroll', showOnScroll);
-
-
-
+showOnScroll();
 async function logout() {
     try {
         await window.signOut(window.auth);
