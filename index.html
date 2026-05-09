@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Elvis Jiagge - Professional web developer and designer. Creating modern, responsive websites with HTML, CSS, and JavaScript.">
+    <meta name="keywords" content="web developer, portfolio, web design, HTML, CSS, JavaScript, responsive design">
+    <meta name="author" content="Elvis Jiagge">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://elvisdev.it.com/">
+    <title>Elvis Jiagge - Web Developer & Designer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png.ico">
     
@@ -34,6 +39,29 @@
         window.onAuthStateChanged = onAuthStateChanged;
     </script>
     
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Elvis Jiagge",
+      "title": "Web Developer & Designer",
+      "description": "Professional web developer crafting clean digital experiences",
+      "url": "https://yourwebsite.com",
+      "email": "elvisdzidula69@gmail.com",
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "Web Design", "Responsive Design"],
+      "jobTitle": "Web Developer"
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <header class="navbar">
@@ -136,8 +164,8 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <p>© 2026 Elvis Jiagge. All rights reserved. Email: elvisdzidula69@gmail.com • Accra, Ghana</p>
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2026 Elvis Jiagge. All rights reserved. Email: <a href="mailto:elvisdzidula69@gmail.com">elvisdzidula69@gmail.com</a> • Accra, Ghana</p>
     </footer>
 
     <script src="script.js"></script>

@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your account.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://yourwebsite.com/login.html">
+    <title>Login - Elvis Jiagge</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png.ico">
     
@@ -30,6 +34,15 @@
         window.auth = auth;
         window.db = db;
         window.signInWithEmailAndPassword = signInWithEmailAndPassword;
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
     </script>
 </head>
 <body class="auth-page">

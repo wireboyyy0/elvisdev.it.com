@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up for an account.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://yourwebsite.com/signup.html">
+    <title>Sign Up - Elvis Jiagge</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png.ico">
     <script type="module">
@@ -28,6 +32,15 @@
         window.createUserWithEmailAndPassword = createUserWithEmailAndPassword;
         window.doc = doc;
         window.setDoc = setDoc;
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
     </script>
 </head>
 <body class="auth-page">
